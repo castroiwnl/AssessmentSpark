@@ -22,7 +22,7 @@ public class Questao4um {
                                 .option("header", true)
                                 .option("inferschema", true)
                                 .format("csv")
-                                .load("hdfs://localhost:9000/user/castro/cogumelos2.csv");
+                                .load("hdfs://localhost:9000/user/castro/mushrooms.csv");
 
                 Dataset<Row> df = (dataset
                                 .select(col("classe").as("label"), col("cap_shape"), col("cap_surface"),
